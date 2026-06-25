@@ -2,6 +2,11 @@ DirectoryIndex index.html
 Options -Indexes
 AddDefaultCharset UTF-8
 
+AuthType Basic
+AuthName "EPAA Web"
+AuthUserFile /var/www/epaa-corporate-site/.htpasswd
+Require valid-user
+
 <IfModule mod_headers.c>
   Header set X-Content-Type-Options "nosniff"
 </IfModule>
