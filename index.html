@@ -25,6 +25,7 @@
       </button>
       <nav id="site-nav" class="site-nav" aria-label="主要ナビゲーション">
         <a href="#service">サービス</a>
+        <a href="#ai">AI連携</a>
         <a href="#pricing">料金</a>
         <a href="#philosophy">フィロソフィー</a>
         <a href="#company">会社概要</a>
@@ -237,24 +238,24 @@
             <p class="eyebrow">Demo Flow</p>
             <h2>作って、生成して、育てる。</h2>
             <p>
-              画面で扱いたい情報や項目を設計し、業務アプリを生成する。必要になればアプリの中身を取り出し、自社の開発環境で拡張していく。EPAAが目指す開発体験の基本動線です。
+              画面で扱いたい情報や項目を設計し、業務アプリを生成する。内部では細かな設計ファイルをもとに、再現性のある生成器がソースコードを作ります。
             </p>
           </div>
           <div class="demo-flow">
             <article>
               <span>01</span>
-              <h3>アプリを設計する</h3>
-              <p>項目、一覧、入力画面、検索条件、履歴を業務に合わせて定義する。</p>
+              <h3>業務を整理する</h3>
+              <p>顧客、案件、申請など、扱いたい情報と業務の流れを整理する。</p>
             </article>
             <article>
               <span>02</span>
-              <h3>アプリの中身を生成する</h3>
-              <p>入力、一覧、検索、更新など、実際に使う画面を備えたソースコードを生成する。</p>
+              <h3>設定ファイルを作る</h3>
+              <p>項目、一覧、入力画面、検索条件、履歴などを細かく定義する。</p>
             </article>
             <article>
               <span>03</span>
-              <h3>自社で拡張する</h3>
-              <p>独自の業務ロジック、外部連携、承認条件を自社のコードとして追加する。</p>
+              <h3>ソースコードを生成する</h3>
+              <p>決められた設定から、基本機能を備えた業務アプリのコードを生成する。</p>
             </article>
           </div>
           <div class="demo-preview-grid">
@@ -289,6 +290,66 @@
         </div>
       </section>
 
+      <section id="ai" class="section section-ai">
+        <div class="container ai-shell">
+          <div class="section-heading center narrow">
+            <p class="eyebrow">AI Assistance</p>
+            <h2>AIは、生成器を正しく動かすために使う。</h2>
+            <p>
+              EPAAの中心は、基本機能を備えた業務アプリのソースコードを、設定ファイルから再現性高く生成する仕組みです。AIはその前後を支援し、属人的な開発の失敗を減らします。
+            </p>
+          </div>
+          <div class="ai-principle">
+            <div>
+              <p class="ai-label">Core Concept</p>
+              <h3>自然言語から設定へ。設定から、確実なコードへ。</h3>
+            </div>
+            <p>
+              EPAAの設定ファイルは、画面、項目、一覧、検索、権限、履歴などを細かく定義できます。一方で、使いこなすには知識と経験が必要です。そこでAI連携により、利用者の言葉から設定ファイルを作り、標準生成器が同じ入力から同じ結果を返す形でソースコードを生成します。
+            </p>
+          </div>
+          <div class="ai-model-grid">
+            <article>
+              <span>EPAA Standard</span>
+              <h3>まずは標準機能で作る</h3>
+              <p>AIは要件を整理し、YAML形式の設定ファイル作成を支援します。コードはEPAAの標準生成器が作るため、結果が安定し、バージョンアップやサポートの対象にしやすくなります。</p>
+              <ul>
+                <li>自然言語から業務内容を整理</li>
+                <li>細かな設定ファイルを生成</li>
+                <li>標準生成器がソースコードを作成</li>
+              </ul>
+            </article>
+            <article class="ai-model-strong">
+              <span>EPAA AI Custom</span>
+              <h3>足りないところだけ、安全に作り込む</h3>
+              <p>標準機能で足りない場合は、生成されたコードを対象に、決められた範囲だけAIでカスタマイズします。編集できる場所をskillsで指定し、ビルド、テスト、チェック、レポートまで含めて管理します。</p>
+              <ul>
+                <li>カスタマイズ範囲を明確化</li>
+                <li>生成コードを基準に追加実装</li>
+                <li>品質確認と作業レポートを残す</li>
+              </ul>
+            </article>
+          </div>
+          <div class="ai-flow" aria-label="AI連携の流れ">
+            <span>自然言語</span>
+            <span>YAML設定</span>
+            <span>標準生成器</span>
+            <span>CRUDソース</span>
+            <span>範囲指定カスタム</span>
+          </div>
+          <div class="ai-safety-grid">
+            <article>
+              <h3>AIに任せすぎない</h3>
+              <p>通常のAIコーディングだけで業務システムを作ると、設計の定石や運用ルールを知らないまま進み、後から破綻しやすくなります。EPAAはAIを設定作成と限定された拡張に使い、土台となるコード生成は標準生成器に任せます。</p>
+            </article>
+            <article>
+              <h3>カスタムも管理下に置く</h3>
+              <p>どうしても標準機能では足りない業務ロジック、外部連携、特殊な承認条件は、生成されたコードのうち許可された範囲だけを対象にします。自由に作れることと、壊れにくく保つことの両立を目指します。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section class="section section-architecture">
         <div class="container architecture-shell">
           <div class="section-heading center narrow">
@@ -317,7 +378,7 @@
             </article>
           </div>
           <div class="architecture-line">
-            <span>Design</span>
+            <span>YAML</span>
             <span>Generate</span>
             <span>Commit</span>
             <span>Extend</span>
