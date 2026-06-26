@@ -373,10 +373,6 @@ p {
   font-weight: 600;
 }
 
-.section-position {
-  padding-top: 44px;
-}
-
 .section-capabilities {
   padding-top: 44px;
 }
@@ -441,6 +437,232 @@ p {
 .capability-grid p {
   color: var(--muted);
   font-size: 0.98rem;
+}
+
+.section-demo,
+.section-architecture,
+.section-pricing,
+.section-usecases,
+.section-position {
+  padding-top: 44px;
+}
+
+.demo-shell,
+.architecture-shell,
+.pricing-shell,
+.usecases-shell {
+  padding: 112px 96px;
+  background: var(--panel);
+  border-radius: 38px;
+}
+
+.demo-flow {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.demo-flow article,
+.architecture-grid article,
+.usecase-grid article {
+  padding: 38px;
+  background: var(--page);
+  border-radius: 30px;
+}
+
+.demo-flow span,
+.usecase-grid span {
+  display: block;
+  margin-bottom: 44px;
+  color: var(--gold);
+  font-size: 0.84rem;
+  font-weight: 600;
+}
+
+.demo-flow p,
+.architecture-grid p,
+.usecase-grid p {
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
+.demo-preview-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: 28px;
+  margin-top: 28px;
+}
+
+.mock-screen {
+  min-height: 430px;
+  display: grid;
+  grid-template-columns: 92px 1fr;
+  overflow: hidden;
+  background: #eef2f6;
+  border-radius: 34px;
+}
+
+.mock-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 34px 24px;
+  background: #142622;
+}
+
+.mock-sidebar span {
+  display: block;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.36);
+  border-radius: 999px;
+}
+
+.mock-canvas {
+  padding: 38px;
+}
+
+.mock-toolbar,
+.mock-form-row,
+.mock-table {
+  background: #fff;
+  border-radius: 18px;
+}
+
+.mock-toolbar {
+  width: 58%;
+  height: 28px;
+  margin-bottom: 28px;
+}
+
+.mock-form-row {
+  height: 54px;
+  margin-bottom: 18px;
+}
+
+.mock-form-row.wide {
+  width: 78%;
+}
+
+.mock-table {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  padding: 18px;
+}
+
+.mock-table span {
+  min-height: 38px;
+  background: #edf1f5;
+  border-radius: 12px;
+}
+
+.code-sample {
+  min-height: 430px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 42px;
+  overflow: auto;
+  background: var(--ink);
+  color: #f5f5f7;
+  border-radius: 34px;
+  font-family: Consolas, "SFMono-Regular", Menlo, monospace;
+  font-size: 0.94rem;
+  line-height: 1.8;
+  white-space: pre-wrap;
+}
+
+.note-text {
+  margin-top: 26px;
+  color: var(--muted);
+  font-size: 0.88rem;
+  text-align: center;
+}
+
+.architecture-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.architecture-line {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.architecture-line span {
+  min-height: 58px;
+  display: grid;
+  place-items: center;
+  background: var(--ink);
+  color: #fff;
+  border-radius: 999px;
+  font-size: 0.92rem;
+  font-weight: 500;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.pricing-grid article {
+  min-height: 520px;
+  padding: 42px;
+  background: var(--page);
+  border-radius: 34px;
+}
+
+.pricing-grid .plan-featured {
+  background: var(--ink);
+  color: #fff;
+}
+
+.plan-label {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.plan-featured .plan-label {
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.plan-price {
+  margin-top: 22px;
+  font-size: 2.4rem;
+  line-height: 1.1;
+}
+
+.pricing-grid ul {
+  margin: 64px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pricing-grid li {
+  padding: 18px 0;
+  color: var(--muted);
+  border-top: 1px solid var(--line-soft);
+}
+
+.plan-featured li {
+  color: rgba(255, 255, 255, 0.72);
+  border-top-color: rgba(255, 255, 255, 0.16);
+}
+
+.usecase-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.usecase-grid article {
+  min-height: 380px;
 }
 
 .section-position .container {
@@ -724,6 +946,11 @@ p {
 
   .service-grid,
   .capability-grid,
+  .demo-flow,
+  .demo-preview-grid,
+  .architecture-grid,
+  .pricing-grid,
+  .usecase-grid,
   .position-list,
   .philosophy-list {
     grid-template-columns: 1fr;
@@ -793,6 +1020,10 @@ p {
 
   .two-column,
   .capabilities-shell,
+  .demo-shell,
+  .architecture-shell,
+  .pricing-shell,
+  .usecases-shell,
   .section-position .container,
   .company-grid,
   .message-grid,
@@ -832,6 +1063,55 @@ p {
     min-height: 0;
     padding: 28px;
     border-radius: 24px;
+  }
+
+  .demo-flow article,
+  .architecture-grid article,
+  .pricing-grid article,
+  .usecase-grid article {
+    min-height: 0;
+    padding: 30px;
+    border-radius: 26px;
+  }
+
+  .demo-flow span,
+  .usecase-grid span {
+    margin-bottom: 34px;
+  }
+
+  .mock-screen,
+  .code-sample {
+    min-height: 360px;
+    border-radius: 26px;
+  }
+
+  .mock-screen {
+    grid-template-columns: 64px 1fr;
+  }
+
+  .mock-sidebar {
+    padding: 28px 16px;
+  }
+
+  .mock-canvas {
+    padding: 28px;
+  }
+
+  .code-sample {
+    padding: 28px;
+    font-size: 0.82rem;
+  }
+
+  .architecture-line {
+    grid-template-columns: 1fr;
+  }
+
+  .plan-price {
+    font-size: 1.9rem;
+  }
+
+  .pricing-grid ul {
+    margin-top: 38px;
   }
 
   .position-list > div,

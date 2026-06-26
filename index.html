@@ -25,6 +25,7 @@
       </button>
       <nav id="site-nav" class="site-nav" aria-label="主要ナビゲーション">
         <a href="#service">サービス</a>
+        <a href="#pricing">料金</a>
         <a href="#philosophy">フィロソフィー</a>
         <a href="#company">会社概要</a>
         <a href="#news">お知らせ</a>
@@ -172,6 +173,175 @@
               <h3>EPAA</h3>
               <p>CRUDを起点に始め、生成ソースを使って自由に拡張できる。</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-demo">
+        <div class="container demo-shell">
+          <div class="section-heading center narrow">
+            <p class="eyebrow">Demo Flow</p>
+            <h2>作って、生成して、育てる。</h2>
+            <p>
+              画面で業務データを設計し、CRUDアプリを生成する。必要になればC#ソースコードを取り出し、自社の開発環境で拡張していく。EPAAが目指す開発体験の基本動線です。
+            </p>
+          </div>
+          <div class="demo-flow">
+            <article>
+              <span>01</span>
+              <h3>アプリを設計する</h3>
+              <p>項目、一覧、入力画面、検索条件、履歴を業務に合わせて定義する。</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>C#コードを生成する</h3>
+              <p>CRUDを基盤に、実際に動くアプリケーションのソースコードを生成する。</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>自社で拡張する</h3>
+              <p>独自の業務ロジック、外部連携、承認条件を自社のコードとして追加する。</p>
+            </article>
+          </div>
+          <div class="demo-preview-grid">
+            <div class="mock-screen" aria-label="開発画面イメージ">
+              <div class="mock-sidebar">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="mock-canvas">
+                <div class="mock-toolbar"></div>
+                <div class="mock-form-row wide"></div>
+                <div class="mock-form-row"></div>
+                <div class="mock-table">
+                  <span></span><span></span><span></span>
+                  <span></span><span></span><span></span>
+                  <span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+            <pre class="code-sample"><code>public class CustomerAppService
+{
+    public Task&lt;CustomerDto&gt; CreateAsync(
+        CreateCustomerRequest request)
+    {
+        // Generated CRUD base.
+        // Extend with your own business logic.
+    }
+}</code></pre>
+          </div>
+          <p class="note-text">画面とコードは掲載用のサンプルです。正式なUI、生成コード、提供範囲は開発状況に合わせて更新します。</p>
+        </div>
+      </section>
+
+      <section class="section section-architecture">
+        <div class="container architecture-shell">
+          <div class="section-heading center narrow">
+            <p class="eyebrow">Architecture</p>
+            <h2>生成されたコードを、自社の資産にする。</h2>
+            <p>
+              EPAAは「作れる」だけで終わらせません。生成されたコードを読み、Gitで管理し、必要な処理を追加できる状態を重視します。
+            </p>
+          </div>
+          <div class="architecture-grid">
+            <article>
+              <h3>.NET / C# ベース</h3>
+              <p>業務アプリケーションをC#ソースコードとして生成する想定です。標準技術に寄せることで、開発者が理解しやすい構造を目指します。</p>
+            </article>
+            <article>
+              <h3>Git管理</h3>
+              <p>生成されたコードをリポジトリで管理し、レビュー、差分確認、履歴管理ができる運用を想定しています。</p>
+            </article>
+            <article>
+              <h3>ローカル開発</h3>
+              <p>Visual Studioなどの開発環境でコードを確認し、自社固有の処理を追加できる運用を想定しています。</p>
+            </article>
+            <article>
+              <h3>CI/CD連携</h3>
+              <p>ビルド、テスト、デプロイの自動化に接続できる構成を目指します。詳細仕様は準備中です。</p>
+            </article>
+          </div>
+          <div class="architecture-line">
+            <span>Design</span>
+            <span>Generate</span>
+            <span>Commit</span>
+            <span>Extend</span>
+            <span>Deploy</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="section section-pricing">
+        <div class="container pricing-shell">
+          <div class="section-heading center narrow">
+            <p class="eyebrow">Pricing</p>
+            <h2>料金体系サンプル</h2>
+            <p>
+              正式な料金は準備中です。以下は検討用のサンプル枠です。ユーザー数、アプリ数、ソースコードの扱い、導入支援の範囲に応じたプランを想定しています。
+            </p>
+          </div>
+          <div class="pricing-grid">
+            <article>
+              <p class="plan-label">PoC</p>
+              <h3>検証プラン</h3>
+              <p class="plan-price">準備中</p>
+              <ul>
+                <li>小規模な業務アプリ検証</li>
+                <li>生成コードの確認</li>
+                <li>導入可否の技術検証</li>
+              </ul>
+            </article>
+            <article class="plan-featured">
+              <p class="plan-label">Business</p>
+              <h3>業務利用プラン</h3>
+              <p class="plan-price">個別見積</p>
+              <ul>
+                <li>複数アプリの作成</li>
+                <li>チーム利用と権限管理</li>
+                <li>自社運用に向けた支援</li>
+              </ul>
+            </article>
+            <article>
+              <p class="plan-label">Enterprise</p>
+              <h3>ソース保有プラン</h3>
+              <p class="plan-price">個別見積</p>
+              <ul>
+                <li>生成ソースコードの活用</li>
+                <li>自社環境での運用相談</li>
+                <li>高度なカスタマイズ支援</li>
+              </ul>
+            </article>
+          </div>
+          <p class="note-text">掲載内容はサンプルです。正式な価格、ライセンス、買い取り可否、利用条件は今後確定します。</p>
+        </div>
+      </section>
+
+      <section class="section section-usecases">
+        <div class="container usecases-shell">
+          <div class="section-heading center narrow">
+            <p class="eyebrow">Use Cases</p>
+            <h2>EPAAが向いている業務</h2>
+            <p>
+              単純な台帳では足りない。けれど、フルスクラッチにするほどでもない。そんな業務に、EPAAの価値が出ます。
+            </p>
+          </div>
+          <div class="usecase-grid">
+            <article>
+              <span>Case 01</span>
+              <h3>承認条件が複雑な申請管理</h3>
+              <p>部門、金額、役職、取引先区分によって承認ルートが変わる。標準機能では足りない条件をC#で拡張する想定ケースです。</p>
+            </article>
+            <article>
+              <span>Case 02</span>
+              <h3>独自計算が必要な案件管理</h3>
+              <p>粗利、手数料、歩合、進捗率など、自社独自の計算式が多い案件管理を、生成アプリを起点に作り込む想定ケースです。</p>
+            </article>
+            <article>
+              <span>Case 03</span>
+              <h3>外部システムと連携する台帳</h3>
+              <p>基幹システム、会計、在庫、CRMと連携しながら、現場が使いやすい入力画面を用意する想定ケースです。</p>
+            </article>
           </div>
         </div>
       </section>
