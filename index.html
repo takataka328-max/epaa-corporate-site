@@ -75,13 +75,13 @@
           <div class="service-grid">
             <article class="service-card">
               <span class="card-number">01</span>
-              <h3>CRUDを起点に、業務アプリをすばやく形にする</h3>
-              <p>業務データの登録、参照、更新、削除を基盤に、現場が必要とするアプリケーションを短い距離で立ち上げる。</p>
+              <h3>日々の業務を、そのままアプリにする</h3>
+              <p>顧客、案件、申請、報告など、いま現場で扱っている情報をもとに、必要な仕組みをすばやく形にする。</p>
             </article>
             <article class="service-card">
               <span class="card-number">02</span>
-              <h3>実際のC#ソースコードを生成する</h3>
-              <p>ノーコードの手軽さで始めながら、必要になれば生成されたソースコードを読み、変え、拡張できる。</p>
+              <h3>あとから本格的に作り込める</h3>
+              <p>手軽に始めながら、必要になれば開発者が中身を確認し、自社に合わせて深く拡張できる。</p>
             </article>
             <article class="service-card service-card-strong">
               <span class="card-number">03</span>
@@ -98,7 +98,7 @@
             <p class="eyebrow">What You Can Build</p>
             <h2>EPAAでできること</h2>
             <p>
-              顧客、案件、問い合わせ、申請、日報、売上。現場に散らばる業務を、CRUDを起点に自社専用のアプリケーションとして形にできます。
+              顧客、案件、問い合わせ、申請、日報、売上。現場に散らばる情報を、自社専用の業務アプリとして形にできます。
             </p>
           </div>
           <div class="capability-feature">
@@ -107,7 +107,7 @@
               <h3>業務に合わせて、必要なアプリを作る。</h3>
             </div>
             <p>
-              テンプレートに業務を合わせるのではなく、業務の流れに合わせてデータ項目、画面、一覧、履歴を設計する。さらに生成されたC#ソースコードを起点に、組織固有の処理まで育てられます。
+              テンプレートに業務を合わせるのではなく、業務の流れに合わせてデータ項目、画面、一覧、履歴を設計する。さらに生成されたアプリの中身を起点に、組織固有の処理まで育てられます。
             </p>
           </div>
           <div class="capability-grid">
@@ -211,21 +211,21 @@
             <p class="eyebrow">Positioning</p>
             <h2>手軽さで終わらない。自由さまで届く。</h2>
             <p>
-              ノーコード・ローコードは始めやすい一方で、業務固有の処理や本格的な拡張に壁があります。EPAAはC#ソースコード生成によって、その先を開きます。
+              手軽に始められるツールは便利です。ただ、業務固有の処理や本格的な拡張には壁があります。EPAAは、その先まで育てられる余地を残します。
             </p>
           </div>
           <div class="position-list">
             <div>
-              <h3>No-code / Low-code</h3>
-              <p>すぐに始められるが、拡張性に限界が出やすい。</p>
+              <h3>一般的な作成ツール</h3>
+              <p>すぐに始められるが、自社独自の処理で限界が出やすい。</p>
             </div>
             <div>
-              <h3>Full Scratch</h3>
-              <p>自由度は高いが、立ち上げに時間と専門性が必要になる。</p>
+              <h3>ゼロから作る開発</h3>
+              <p>自由度は高いが、立ち上げに時間と専門的な準備が必要になる。</p>
             </div>
             <div class="position-epaa">
               <h3>EPAA</h3>
-              <p>CRUDを起点に始め、生成ソースを使って自由に拡張できる。</p>
+              <p>まず必要な業務画面を作り、必要になったところから自由に拡張できる。</p>
             </div>
           </div>
         </div>
@@ -237,7 +237,7 @@
             <p class="eyebrow">Demo Flow</p>
             <h2>作って、生成して、育てる。</h2>
             <p>
-              画面で業務データを設計し、CRUDアプリを生成する。必要になればC#ソースコードを取り出し、自社の開発環境で拡張していく。EPAAが目指す開発体験の基本動線です。
+              画面で扱いたい情報や項目を設計し、業務アプリを生成する。必要になればアプリの中身を取り出し、自社の開発環境で拡張していく。EPAAが目指す開発体験の基本動線です。
             </p>
           </div>
           <div class="demo-flow">
@@ -248,8 +248,8 @@
             </article>
             <article>
               <span>02</span>
-              <h3>C#コードを生成する</h3>
-              <p>CRUDを基盤に、実際に動くアプリケーションのソースコードを生成する。</p>
+              <h3>アプリの中身を生成する</h3>
+              <p>入力、一覧、検索、更新など、実際に使う画面を備えたソースコードを生成する。</p>
             </article>
             <article>
               <span>03</span>
@@ -280,7 +280,7 @@
     public Task&lt;CustomerDto&gt; CreateAsync(
         CreateCustomerRequest request)
     {
-        // Generated CRUD base.
+        // Generated app base.
         // Extend with your own business logic.
     }
 }</code></pre>
@@ -377,24 +377,96 @@
             <p class="eyebrow">Use Cases</p>
             <h2>EPAAが向いている業務</h2>
             <p>
-              単純な台帳では足りない。けれど、フルスクラッチにするほどでもない。そんな業務に、EPAAの価値が出ます。
+              「表にまとめるだけ」では足りない。けれど、ゼロから大きな開発をするほどでもない。そんな業務に、EPAAの価値が出ます。
             </p>
           </div>
           <div class="usecase-grid">
-            <article>
-              <span>Case 01</span>
+            <article class="usecase-card">
+              <div class="case-visual case-approval" aria-label="申請管理画面のイメージ">
+                <div class="case-visual-header">
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="case-route">
+                  <span>申請</span>
+                  <span>部門長</span>
+                  <span>役員</span>
+                </div>
+                <div class="case-row wide"></div>
+                <div class="case-row"></div>
+              </div>
+              <span class="case-label">Case 01</span>
               <h3>承認条件が複雑な申請管理</h3>
-              <p>部門、金額、役職、取引先区分によって承認ルートが変わる。標準機能では足りない条件をC#で拡張する想定ケースです。</p>
+              <div class="case-framework">
+                <div>
+                  <strong>困りごと</strong>
+                  <p>金額、部門、役職によって承認者が変わり、表計算やメールでは追いきれない。</p>
+                </div>
+                <div>
+                  <strong>作る仕組み</strong>
+                  <p>入力画面、承認ルート、状態管理、履歴をひとつの申請アプリにまとめる。</p>
+                </div>
+                <div>
+                  <strong>できること</strong>
+                  <p>誰で止まっているか、次に誰が見るべきかを画面で確認できる。</p>
+                </div>
+              </div>
             </article>
-            <article>
-              <span>Case 02</span>
+            <article class="usecase-card">
+              <div class="case-visual case-sales" aria-label="案件管理画面のイメージ">
+                <div class="case-metric">
+                  <span></span>
+                  <strong></strong>
+                </div>
+                <div class="case-chart">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="case-row"></div>
+              </div>
+              <span class="case-label">Case 02</span>
               <h3>独自計算が必要な案件管理</h3>
-              <p>粗利、手数料、歩合、進捗率など、自社独自の計算式が多い案件管理を、生成アプリを起点に作り込む想定ケースです。</p>
+              <div class="case-framework">
+                <div>
+                  <strong>困りごと</strong>
+                  <p>粗利、手数料、歩合、進捗率など、自社だけの計算が多く標準ツールでは合わない。</p>
+                </div>
+                <div>
+                  <strong>作る仕組み</strong>
+                  <p>案件ごとの入力、集計、計算結果、進捗を同じ画面で見られるようにする。</p>
+                </div>
+                <div>
+                  <strong>できること</strong>
+                  <p>担当者別、月別、案件別の状況を見ながら、判断に使える数字を残せる。</p>
+                </div>
+              </div>
             </article>
-            <article>
-              <span>Case 03</span>
+            <article class="usecase-card">
+              <div class="case-visual case-connect" aria-label="外部連携画面のイメージ">
+                <div class="case-node"></div>
+                <div class="case-link"></div>
+                <div class="case-node dark"></div>
+                <div class="case-link"></div>
+                <div class="case-node"></div>
+              </div>
+              <span class="case-label">Case 03</span>
               <h3>外部システムと連携する台帳</h3>
-              <p>基幹システム、会計、在庫、CRMと連携しながら、現場が使いやすい入力画面を用意する想定ケースです。</p>
+              <div class="case-framework">
+                <div>
+                  <strong>困りごと</strong>
+                  <p>基幹、会計、在庫などに情報が分かれ、現場は何度も同じ内容を入力している。</p>
+                </div>
+                <div>
+                  <strong>作る仕組み</strong>
+                  <p>現場が使う入力画面を中心に、必要な情報を外部システムとつなげる。</p>
+                </div>
+                <div>
+                  <strong>できること</strong>
+                  <p>二重入力を減らし、見たい情報をひとつの業務画面から追える。</p>
+                </div>
+              </div>
             </article>
           </div>
         </div>
@@ -428,7 +500,7 @@
               <span>03</span>
               <h3>自由に、本気で拡張できる</h3>
               <p>
-                ノーコード・ローコードの手軽さの先には、必ず「これ以上はカスタマイズできない」という壁がある。EPAAは、CRUDを基盤としながら実際のC#ソースコードを生成することで、この壁を取り払う。
+                ノーコード・ローコードの手軽さの先には、必ず「これ以上はカスタマイズできない」という壁がある。EPAAは、実際に動くC#ソースコードを生成することで、この壁を取り払う。
               </p>
             </article>
             <article>
@@ -486,7 +558,7 @@
               一方で、kintoneのようなノーコードツールは、この状況に一つの解決策を示しました。誰でも簡単にアプリケーションをつくれるという価値は、非常に大きなものです。しかし同時に、多くの現場が「もう少しだけ柔軟にしたい」「ここだけは特別な処理が必要だ」という壁に行き当たり、結局は外部に開発を依頼せざるを得なくなる場面を、何度も目にしてきました。
             </p>
             <p>
-              EPAAは、この壁を取り払うために生まれました。CRUDを基盤としながら、実際に動くC#のソースコードを生成する。だからこそ、簡単に始められると同時に、必要なところまで自由にカスタマイズできる。ノーコードの手軽さと、フルスクラッチ開発の自由さ、その両方を一つの仕組みの中に実現することが、私たちの目指すところです。
+              EPAAは、この壁を取り払うために生まれました。実際に動くC#のソースコードを生成する。だからこそ、簡単に始められると同時に、必要なところまで自由にカスタマイズできる。手軽に始められる良さと、ゼロから作る開発の自由さ。その両方を一つの仕組みの中に実現することが、私たちの目指すところです。
             </p>
             <p>
               私たちが本当に届けたいのは、便利な道具ではありません。業務を一番知っている人が、自分の手で、自分の組織のためのシステムをつくれるようになる。その力そのものです。システム開発を委託する時代から、自社で開発する時代へ。その転換を、EPAAは本気でつくっていきます。
