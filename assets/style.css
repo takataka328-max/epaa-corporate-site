@@ -377,6 +377,72 @@ p {
   padding-top: 44px;
 }
 
+.section-capabilities {
+  padding-top: 44px;
+}
+
+.capabilities-shell {
+  padding: 112px 96px;
+  background: var(--panel);
+  border-radius: 38px;
+}
+
+.capability-feature {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: 84px;
+  align-items: end;
+  min-height: 360px;
+  padding: 64px;
+  margin-bottom: 28px;
+  background: linear-gradient(135deg, #f5f7fb 0%, #eef2f6 100%);
+  border-radius: 34px;
+}
+
+.capability-label {
+  margin-bottom: 18px;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 500;
+}
+
+.capability-feature h3 {
+  max-width: 520px;
+  font-size: 2.65rem;
+}
+
+.capability-feature p:last-child {
+  color: var(--muted);
+  font-size: 1.08rem;
+  line-height: 1.82;
+}
+
+.capability-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.capability-grid article {
+  min-height: 210px;
+  padding: 34px;
+  background: var(--page);
+  border-radius: 28px;
+}
+
+.capability-grid span {
+  display: block;
+  margin-bottom: 22px;
+  color: var(--ink);
+  font-size: 1.18rem;
+  font-weight: 600;
+}
+
+.capability-grid p {
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
 .section-position .container {
   padding: 112px 96px;
   background: var(--panel);
@@ -657,8 +723,13 @@ p {
   }
 
   .service-grid,
+  .capability-grid,
   .position-list,
   .philosophy-list {
+    grid-template-columns: 1fr;
+  }
+
+  .capability-feature {
     grid-template-columns: 1fr;
   }
 
@@ -721,6 +792,7 @@ p {
   }
 
   .two-column,
+  .capabilities-shell,
   .section-position .container,
   .company-grid,
   .message-grid,
@@ -743,6 +815,23 @@ p {
 
   .service-card::before {
     height: 150px;
+  }
+
+  .capability-feature {
+    min-height: 0;
+    gap: 34px;
+    padding: 34px;
+    border-radius: 26px;
+  }
+
+  .capability-feature h3 {
+    font-size: 1.72rem;
+  }
+
+  .capability-grid article {
+    min-height: 0;
+    padding: 28px;
+    border-radius: 24px;
   }
 
   .position-list > div,
