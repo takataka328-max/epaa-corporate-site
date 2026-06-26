@@ -25,7 +25,7 @@
       </button>
       <nav id="site-nav" class="site-nav" aria-label="主要ナビゲーション">
         <a href="#service">サービス</a>
-        <a href="#ai">AI連携</a>
+        <a href="#solution">解決策</a>
         <a href="#pricing">料金</a>
         <a href="#philosophy">フィロソフィー</a>
         <a href="#company">会社概要</a>
@@ -236,9 +236,9 @@
         <div class="container demo-shell">
           <div class="section-heading center narrow">
             <p class="eyebrow">Demo Flow</p>
-            <h2>作って、生成して、育てる。</h2>
+            <h2>作って、使って、育てる。</h2>
             <p>
-              画面で扱いたい情報や項目を設計し、業務アプリを生成する。内部では細かな設計ファイルをもとに、再現性のある生成器がソースコードを作ります。
+              業務の流れを整理し、入力画面や一覧、検索、履歴を備えた業務アプリにする。使い始めてから見えてくる改善にも、EPAAは向き合います。
             </p>
           </div>
           <div class="demo-flow">
@@ -249,13 +249,13 @@
             </article>
             <article>
               <span>02</span>
-              <h3>設定ファイルを作る</h3>
-              <p>項目、一覧、入力画面、検索条件、履歴などを細かく定義する。</p>
+              <h3>アプリとして形にする</h3>
+              <p>入力、一覧、検索、履歴など、現場で毎日使う画面を用意する。</p>
             </article>
             <article>
               <span>03</span>
-              <h3>ソースコードを生成する</h3>
-              <p>決められた設定から、基本機能を備えた業務アプリのコードを生成する。</p>
+              <h3>変化に合わせて育てる</h3>
+              <p>承認条件、計算、外部連携など、後から出てくる要望にも対応する。</p>
             </article>
           </div>
           <div class="demo-preview-grid">
@@ -276,75 +276,83 @@
                 </div>
               </div>
             </div>
-            <pre class="code-sample"><code>public class CustomerAppService
-{
-    public Task&lt;CustomerDto&gt; CreateAsync(
-        CreateCustomerRequest request)
-    {
-        // Generated app base.
-        // Extend with your own business logic.
-    }
-}</code></pre>
+            <div class="operation-panel" aria-label="業務アプリ活用イメージ">
+              <div>
+                <span>承認待ち</span>
+                <strong>12件</strong>
+                <p>金額や部門に応じて、次に見るべき人を自動で整理。</p>
+              </div>
+              <div>
+                <span>今月の実績</span>
+                <strong>87%</strong>
+                <p>案件、売上、粗利を自社の見方に合わせて集計。</p>
+              </div>
+              <div>
+                <span>外部連携</span>
+                <strong>3系統</strong>
+                <p>会計、在庫、顧客情報など、既存システムとつなぐ。</p>
+              </div>
+            </div>
           </div>
-          <p class="note-text">画面とコードは掲載用のサンプルです。正式なUI、生成コード、提供範囲は開発状況に合わせて更新します。</p>
+          <p class="note-text">画面と数値は掲載用のサンプルです。正式なUI、提供範囲は開発状況に合わせて更新します。</p>
         </div>
       </section>
 
-      <section id="ai" class="section section-ai">
+      <section id="solution" class="section section-ai">
         <div class="container ai-shell">
           <div class="section-heading center narrow">
-            <p class="eyebrow">AI Assistance</p>
-            <h2>AIは、生成器を正しく動かすために使う。</h2>
+            <p class="eyebrow">Low-code Reality</p>
+            <h2>ローコードで止まる業務を、最後まで使える形にする。</h2>
             <p>
-              EPAAの中心は、基本機能を備えた業務アプリのソースコードを、設定ファイルから再現性高く生成する仕組みです。AIはその前後を支援し、属人的な開発の失敗を減らします。
+              すぐに作れることは大切です。しかし現場の業務は、少し使うと必ず例外、独自ルール、連携、変更にぶつかります。EPAAは、そこで止まらないための業務アプリ基盤です。
             </p>
           </div>
           <div class="ai-principle">
             <div>
-              <p class="ai-label">Core Concept</p>
-              <h3>自然言語から設定へ。設定から、確実なコードへ。</h3>
+              <p class="ai-label">What EPAA Solves</p>
+              <h3>作れるだけでは足りない。使い続けられることが重要だ。</h3>
             </div>
             <p>
-              EPAAの設定ファイルは、画面、項目、一覧、検索、権限、履歴などを細かく定義できます。一方で、使いこなすには知識と経験が必要です。そこでAI連携により、利用者の言葉から設定ファイルを作り、標準生成器が同じ入力から同じ結果を返す形でソースコードを生成します。
+              多くのローコードは、最初の画面を作るところまでは速い。一方で、承認条件が増える、計算式が変わる、外部システムとつなぐ、部門ごとに画面を変える、といった場面で限界が見えます。EPAAは、標準機能で始めやすく、必要になったところから深く作り込める道を用意します。
             </p>
           </div>
           <div class="ai-model-grid">
             <article>
-              <span>EPAA Standard</span>
-              <h3>まずは標準機能で作る</h3>
-              <p>AIは要件を整理し、YAML形式の設定ファイル作成を支援します。コードはEPAAの標準生成器が作るため、結果が安定し、バージョンアップやサポートの対象にしやすくなります。</p>
+              <span>Low-code Problem</span>
+              <h3>最初は簡単。でも途中で詰まる。</h3>
+              <p>テンプレートや標準部品だけでは、実際の業務にある細かな例外を吸収しきれないことがあります。現場は結局、表計算、手作業、別システムへの二重入力で補うことになります。</p>
               <ul>
-                <li>自然言語から業務内容を整理</li>
-                <li>細かな設定ファイルを生成</li>
-                <li>標準生成器がソースコードを作成</li>
+                <li>承認ルートが業務に合わない</li>
+                <li>独自の計算や判定が入れにくい</li>
+                <li>既存システムとの連携で止まる</li>
               </ul>
             </article>
             <article class="ai-model-strong">
-              <span>EPAA AI Custom</span>
-              <h3>足りないところだけ、安全に作り込む</h3>
-              <p>標準機能で足りない場合は、生成されたコードを対象に、決められた範囲だけAIでカスタマイズします。編集できる場所をskillsで指定し、ビルド、テスト、チェック、レポートまで含めて管理します。</p>
+              <span>EPAA Answer</span>
+              <h3>標準で始めて、業務に合わせて育てる。</h3>
+              <p>EPAAは、顧客管理、案件管理、申請、日報などの基本的な業務アプリをすばやく形にします。そのうえで、標準機能では足りない部分だけを管理された形で拡張できます。</p>
               <ul>
-                <li>カスタマイズ範囲を明確化</li>
-                <li>生成コードを基準に追加実装</li>
-                <li>品質確認と作業レポートを残す</li>
+                <li>現場の業務ルールをアプリに反映</li>
+                <li>使いながら改善できる余地を残す</li>
+                <li>自社の中に運用と改善の力を残す</li>
               </ul>
             </article>
           </div>
-          <div class="ai-flow" aria-label="AI連携の流れ">
-            <span>自然言語</span>
-            <span>YAML設定</span>
-            <span>標準生成器</span>
-            <span>CRUDソース</span>
-            <span>範囲指定カスタム</span>
+          <div class="ai-flow" aria-label="EPAAで解決できる業務">
+            <span>複雑な承認</span>
+            <span>独自計算</span>
+            <span>外部連携</span>
+            <span>部門別画面</span>
+            <span>継続改善</span>
           </div>
           <div class="ai-safety-grid">
             <article>
-              <h3>AIに任せすぎない</h3>
-              <p>通常のAIコーディングだけで業務システムを作ると、設計の定石や運用ルールを知らないまま進み、後から破綻しやすくなります。EPAAはAIを設定作成と限定された拡張に使い、土台となるコード生成は標準生成器に任せます。</p>
+              <h3>現場がほしい形に近づける</h3>
+              <p>業務を一番知っている人の言葉をもとに、必要な項目、一覧、画面、履歴、権限を整理します。単に入力欄を並べるのではなく、実際に判断や確認に使える業務アプリを目指します。</p>
             </article>
             <article>
-              <h3>カスタムも管理下に置く</h3>
-              <p>どうしても標準機能では足りない業務ロジック、外部連携、特殊な承認条件は、生成されたコードのうち許可された範囲だけを対象にします。自由に作れることと、壊れにくく保つことの両立を目指します。</p>
+              <h3>作って終わりにしない</h3>
+              <p>導入後に業務が変わっても、画面やルールを育てていけることを重視します。ローコードの手軽さと、本格的な業務システムに必要な拡張性をつなぐことがEPAAの役割です。</p>
             </article>
           </div>
         </div>
@@ -354,9 +362,9 @@
         <div class="container architecture-shell">
           <div class="section-heading center narrow">
             <p class="eyebrow">Architecture</p>
-            <h2>生成されたコードを、自社の資産にする。</h2>
+            <h2>作った業務アプリを、自社の資産にする。</h2>
             <p>
-              EPAAは「作れる」だけで終わらせません。生成されたコードを読み、Gitで管理し、必要な処理を追加できる状態を重視します。
+              EPAAは「作れる」だけで終わらせません。作ったアプリを管理し、見直し、必要な処理を追加できる状態を重視します。
             </p>
           </div>
           <div class="architecture-grid">
@@ -366,7 +374,7 @@
             </article>
             <article>
               <h3>Git管理</h3>
-              <p>生成されたコードをリポジトリで管理し、レビュー、差分確認、履歴管理ができる運用を想定しています。</p>
+              <p>アプリの変更をリポジトリで管理し、レビュー、差分確認、履歴管理ができる運用を想定しています。</p>
             </article>
             <article>
               <h3>ローカル開発</h3>
@@ -378,11 +386,11 @@
             </article>
           </div>
           <div class="architecture-line">
-            <span>YAML</span>
-            <span>Generate</span>
-            <span>Commit</span>
-            <span>Extend</span>
-            <span>Deploy</span>
+            <span>整理</span>
+            <span>作成</span>
+            <span>管理</span>
+            <span>改善</span>
+            <span>運用</span>
           </div>
         </div>
       </section>
@@ -561,7 +569,7 @@
               <span>03</span>
               <h3>自由に、本気で拡張できる</h3>
               <p>
-                ノーコード・ローコードの手軽さの先には、必ず「これ以上はカスタマイズできない」という壁がある。EPAAは、実際に動くC#ソースコードを生成することで、この壁を取り払う。
+                ノーコード・ローコードの手軽さの先には、必ず「これ以上はカスタマイズできない」という壁がある。EPAAは、業務アプリをあとから本格的に拡張できる形にすることで、この壁を取り払う。
               </p>
             </article>
             <article>
@@ -619,7 +627,7 @@
               一方で、kintoneのようなノーコードツールは、この状況に一つの解決策を示しました。誰でも簡単にアプリケーションをつくれるという価値は、非常に大きなものです。しかし同時に、多くの現場が「もう少しだけ柔軟にしたい」「ここだけは特別な処理が必要だ」という壁に行き当たり、結局は外部に開発を依頼せざるを得なくなる場面を、何度も目にしてきました。
             </p>
             <p>
-              EPAAは、この壁を取り払うために生まれました。実際に動くC#のソースコードを生成する。だからこそ、簡単に始められると同時に、必要なところまで自由にカスタマイズできる。手軽に始められる良さと、ゼロから作る開発の自由さ。その両方を一つの仕組みの中に実現することが、私たちの目指すところです。
+              EPAAは、この壁を取り払うために生まれました。簡単に始められると同時に、必要なところまで自由にカスタマイズできる。手軽に始められる良さと、ゼロから作る開発の自由さ。その両方を一つの仕組みの中に実現することが、私たちの目指すところです。
             </p>
             <p>
               私たちが本当に届けたいのは、便利な道具ではありません。業務を一番知っている人が、自分の手で、自分の組織のためのシステムをつくれるようになる。その力そのものです。システム開発を委託する時代から、自社で開発する時代へ。その転換を、EPAAは本気でつくっていきます。
