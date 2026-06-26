@@ -519,6 +519,7 @@ p {
 
 .section-demo,
 .section-ai,
+.section-flow,
 .section-architecture,
 .section-pricing,
 .section-usecases,
@@ -528,6 +529,7 @@ p {
 
 .demo-shell,
 .ai-shell,
+.flow-shell,
 .architecture-shell,
 .pricing-shell,
 .usecases-shell {
@@ -819,6 +821,86 @@ p {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
+}
+
+.flow-source-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.flow-source-grid article {
+  min-height: 300px;
+  padding: 42px;
+  background: var(--ink);
+  color: #fff;
+  border-radius: 30px;
+}
+
+.flow-source-grid article:nth-child(2) {
+  background: #f5f0e6;
+  color: var(--ink);
+}
+
+.flow-source-grid span,
+.development-flow span,
+.flow-option-label {
+  display: block;
+  margin-bottom: 28px;
+  color: var(--gold);
+  font-size: 0.86rem;
+  font-weight: 600;
+}
+
+.flow-source-grid article:first-child p {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.flow-source-grid p,
+.development-flow p,
+.flow-option > p {
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
+.development-flow {
+  counter-reset: flow-step;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.development-flow article {
+  min-height: 330px;
+  padding: 30px;
+  background: var(--page);
+  border-radius: 28px;
+}
+
+.development-flow h3 {
+  font-size: 1.2rem;
+}
+
+.flow-option {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: 44px;
+  align-items: center;
+  margin-top: 28px;
+  padding: 42px;
+  background: var(--deep);
+  color: #fff;
+  border-radius: 30px;
+}
+
+.flow-option h3 {
+  color: #fff;
+}
+
+.flow-option > p {
+  color: rgba(255, 255, 255, 0.72);
 }
 
 .architecture-grid {
@@ -1352,6 +1434,8 @@ p {
   .capability-grid,
   .ai-model-grid,
   .ai-safety-grid,
+  .flow-source-grid,
+  .development-flow,
   .demo-flow,
   .demo-preview-grid,
   .architecture-grid,
@@ -1367,6 +1451,11 @@ p {
   }
 
   .ai-principle {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .flow-option {
     grid-template-columns: 1fr;
     align-items: start;
   }
@@ -1433,6 +1522,7 @@ p {
   .capabilities-shell,
   .demo-shell,
   .ai-shell,
+  .flow-shell,
   .architecture-shell,
   .pricing-shell,
   .usecases-shell,
@@ -1484,6 +1574,8 @@ p {
   .demo-flow article,
   .ai-model-grid article,
   .ai-safety-grid article,
+  .flow-source-grid article,
+  .development-flow article,
   .architecture-grid article,
   .pricing-grid article,
   .usecase-card {
@@ -1515,6 +1607,17 @@ p {
   .ai-flow span {
     min-height: 54px;
     border-radius: 18px;
+  }
+
+  .flow-source-grid article,
+  .flow-option {
+    min-height: 0;
+    padding: 30px;
+    border-radius: 26px;
+  }
+
+  .flow-option {
+    gap: 26px;
   }
 
   .case-visual {
